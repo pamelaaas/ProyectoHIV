@@ -6,88 +6,126 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tx1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
-        android:fontFamily="@font/holtwood_one_sc"
-        android:text="Habilidades Blandas"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/def"
-        tools:layout_editor_absoluteX="34dp" />
-
-    <ImageView
-        android:id="@+id/img4"
-        android:layout_width="47dp"
-        android:layout_height="49dp"
-        app:srcCompat="@drawable/test"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="443dp" />
-
     <Button
         android:id="@+id/def"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="8dp"
         android:text="Definición"
         android:textColor="#FAF4F4"
         app:layout_constraintBottom_toTopOf="@+id/tip"
-        app:layout_constraintEnd_toStartOf="@+id/img1" />
+        app:layout_constraintEnd_toStartOf="@+id/img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx1" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="147dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/test"
+        app:layout_constraintTop_toBottomOf="@+id/def"
+        app:srcCompat="@drawable/test" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/img4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imp"
+        app:layout_constraintTop_toBottomOf="@+id/tip"
+        app:srcCompat="@drawable/importa" />
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/holtwood_one_sc"
+        android:text="Habilidades Blandas"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/def"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        app:srcCompat="@drawable/concepto"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="172dp" />
-
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        app:srcCompat="@drawable/tipos"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="257dp" />
-
-    <Button
-        android:id="@+id/tip"
-        android:layout_width="103dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="40dp"
-        android:text="Tipos "
-        app:layout_constraintBottom_toTopOf="@+id/imp"
-        app:layout_constraintEnd_toStartOf="@+id/img2" />
-
-    <Button
-        android:id="@+id/test"
-        android:layout_width="94dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="160dp"
-        android:text="Test"
-        app:layout_constraintEnd_toStartOf="@+id/img4"
-        tools:layout_editor_absoluteY="442dp" />
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/def"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/def"
+        app:layout_constraintTop_toBottomOf="@+id/tx1"
+        app:srcCompat="@drawable/concepto" />
 
     <Button
         android:id="@+id/imp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Importancia"
         app:layout_constraintBottom_toTopOf="@+id/test"
-        app:layout_constraintEnd_toStartOf="@+id/img3" />
+        app:layout_constraintEnd_toStartOf="@+id/img3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip" />
 
     <ImageView
-        android:id="@+id/img3"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        app:srcCompat="@drawable/importa"
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="346dp" />
+        android:id="@+id/img2"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tip"
+        app:layout_constraintTop_toTopOf="@+id/img1"
+        app:srcCompat="@drawable/tipos" />
+
+    <Button
+        android:id="@+id/tip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tipos "
+        app:layout_constraintBottom_toTopOf="@+id/imp"
+        app:layout_constraintEnd_toStartOf="@+id/img2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/def" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="165dp"
+        android:text="Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
